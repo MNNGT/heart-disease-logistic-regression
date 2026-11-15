@@ -1,3 +1,8 @@
+
+**Language / Langue:** [English](README.md) | [Français](README.fr.md)
+
+---
+
 # Heart Disease Risk Factors – Multivariable Logistic Regression in R
 
 **Epidemiological Data Analysis | R | Logistic Regression | Quarto | R Shiny | Reproducible Research**
