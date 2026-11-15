@@ -93,6 +93,13 @@ The complete report is available in `report.html`, generated from `report.qmd` w
 
 It includes statistical methods, adjusted odds ratios, graphical diagnostics, ROC analysis, sensitivity analyses, interpretation and study limitations.
 
+The full scientific report is available online and was generated using R and Quarto with the Flatly theme.
+
+The report presents multivariable logistic regression, adjusted odds ratios with 95% confidence intervals, influence diagnostics, sensitivity analyses, ROC curves, and five-fold cross-validation.
+
+**[View the Interactive Scientific Report](https://mnngt.github.io/heart-disease-logistic-regression/report.html)**
+
+
 ## Limitations
 
 - The dataset is relatively small and comes from a specific clinical setting.
