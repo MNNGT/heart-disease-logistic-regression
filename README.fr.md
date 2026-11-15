@@ -8,9 +8,13 @@
 
 ## Explorer le projet
 
-**📊 [Consulter le rapport scientifique – R & Quarto (en anglais)](https://mnngt.github.io/heart-disease-logistic-regression/report.html)**
 
-**🖥️ [Ouvrir le tableau de bord interactif – R Shiny (français / anglais)](https://mnngt-epi.shinyapps.io/heart-disease-logistic-explorer/)**
+**📊 [Rapport scientifique – Français](https://mnngt.github.io/heart-disease-logistic-regression/report.fr.html)**
+
+**📊 [Scientific Report – English](https://mnngt.github.io/heart-disease-logistic-regression/report.html)**
+
+**🖥️ [Application interactive R Shiny – Français / English](https://mnngt-epi.shinyapps.io/heart-disease-logistic-explorer/)**
+
 
 Le rapport scientifique présente les méthodes statistiques, les résultats et leur interprétation détaillée. Le tableau de bord interactif permet d'explorer les données, les performances du modèle et les analyses de sensibilité, grâce à une interface disponible **en français et en anglais**.
 
