@@ -1,6 +1,16 @@
 # Heart Disease Risk Factors – Multivariable Logistic Regression in R
 
-**Epidemiological Data Analysis | R | Logistic Regression | Quarto | Reproducible Research**
+**Epidemiological Data Analysis | R | Logistic Regression | Quarto | R Shiny | Reproducible Research**
+
+## Explore the Project
+
+**📊 [View the Scientific Report – R & Quarto](https://mnngt.github.io/heart-disease-logistic-regression/report.html)**
+
+**🖥️ [Launch the Interactive Dashboard – R Shiny](https://mnngt-epi.shinyapps.io/heart-disease-logistic-explorer/)**
+
+The scientific report provides a detailed interpretation of the statistical methods and results. The interactive dashboard offers exploratory visualizations, model performance metrics, and sensitivity analyses, with an interface available in **English and French**.
+
+---
 
 ## Project Overview
 
@@ -8,7 +18,7 @@ This project investigates associations between selected clinical characteristics
 
 The analysis demonstrates a reproducible epidemiological workflow, including data preparation, multivariable logistic regression, adjusted odds ratios, model diagnostics, sensitivity analyses, and internal validation.
 
-The results are presented in an English-language scientific report generated with R and Quarto.
+The project combines statistical programming in R, scientific reporting with Quarto, and interactive visualization with R Shiny.
 
 ## Objectives
 
@@ -18,13 +28,12 @@ The results are presented in an English-language scientific report generated wit
 - Assess influential observations using Cook's distance.
 - Evaluate the robustness of model estimates.
 - Assess discriminatory performance using the area under the ROC curve (AUC).
-- Produce a reproducible scientific report.
+- Produce a reproducible scientific report and an interactive statistical dashboard.
 
 ## Data Source
 
 **Dataset:** Cleveland Heart Disease  
-**Source:** UCI Machine Learning Repository  
-https://archive.ics.uci.edu/dataset/45/heart+disease
+**Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/45/heart+disease)
 
 The dataset contains 303 observations and 14 original variables.
 
@@ -40,7 +49,9 @@ The explanatory variables included age, sex, resting blood pressure, cholesterol
 
 Model coefficients were exponentiated to obtain adjusted odds ratios and 95% confidence intervals.
 
-Influential observations were investigated using Cook's distance, followed by an exploratory sensitivity analysis. Model discrimination was assessed using the apparent AUC and stratified five-fold cross-validation.
+Influential observations were investigated using Cook's distance, followed by an exploratory sensitivity analysis.
+
+Model discrimination was assessed using the apparent AUC and stratified five-fold cross-validation.
 
 ## Main Results
 
@@ -53,9 +64,32 @@ Influential observations were investigated using Cook's distance, followed by an
 - **Apparent AUC:** 0.839
 - **Five-fold cross-validated AUC:** 0.823
 
-An exploratory influence analysis identified 20 observations exceeding the Cook's distance screening threshold. The sensitivity model showed substantial changes in some estimates, particularly the association with male sex.
+An exploratory influence analysis identified 20 observations exceeding the Cook's distance screening threshold.
+
+The sensitivity model showed substantial changes in some estimates, particularly the association with male sex.
 
 These results describe statistical associations and should not be interpreted as causal effects.
+
+## Interactive R Shiny Dashboard
+
+The dashboard allows users to explore the cardiovascular dataset and statistical models through four analytical components:
+
+1. **Exploratory Data Analysis:** Descriptive epidemiological indicators and interactive visualizations.
+2. **Logistic Regression:** Adjusted odds ratios, 95% confidence intervals, and graphical interpretation.
+3. **Model Performance:** ROC analysis, AUC metrics, and classification performance.
+4. **Sensitivity Analysis:** Influence diagnostics and comparison of model estimates.
+
+The application includes a bilingual **English / French** interface.
+
+**[Launch the R Shiny Dashboard](https://mnngt-epi.shinyapps.io/heart-disease-logistic-explorer/)**
+
+## Scientific Report
+
+The full scientific report was generated using R and Quarto with the Flatly theme.
+
+It includes statistical methods, adjusted odds ratios, graphical diagnostics, ROC analysis, sensitivity analyses, interpretation, and study limitations.
+
+**[Read the Full Scientific Report](https://mnngt.github.io/heart-disease-logistic-regression/report.html)**
 
 ## Project Structure
 
@@ -68,6 +102,9 @@ heart-disease-logistic-regression/
 ├── outputs/
 │   ├── figures/
 │   └── tables/
+├── shiny/
+│   ├── app.R
+│   └── data/
 ├── report.qmd
 ├── report.html
 └── README.md
@@ -85,20 +122,11 @@ Generate the scientific report:
 
 `quarto::quarto_render("report.qmd")`
 
+Launch the interactive dashboard:
+
+`shiny::runApp("shiny")`
+
 The analysis generates tables and figures under `outputs/`.
-
-## Scientific Report
-
-The complete report is available in `report.html`, generated from `report.qmd` with the Quarto **Flatly** theme.
-
-It includes statistical methods, adjusted odds ratios, graphical diagnostics, ROC analysis, sensitivity analyses, interpretation and study limitations.
-
-The full scientific report is available online and was generated using R and Quarto with the Flatly theme.
-
-The report presents multivariable logistic regression, adjusted odds ratios with 95% confidence intervals, influence diagnostics, sensitivity analyses, ROC curves, and five-fold cross-validation.
-
-**[View the Interactive Scientific Report](https://mnngt.github.io/heart-disease-logistic-regression/report.html)**
-
 
 ## Limitations
 
@@ -116,4 +144,4 @@ This project is intended to demonstrate statistical programming and epidemiologi
 MSc Public Health – Quantitative and Econometric Methods for Health Research  
 Aix-Marseille University
 
-GitHub: https://github.com/MNNGT
+**GitHub:** https://github.com/MNNGT
