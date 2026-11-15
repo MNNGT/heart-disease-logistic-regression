@@ -1,0 +1,7 @@
+"metric","value"
+"n_primary",303
+"n_sensitivity",283
+"n_flagged_cook",20
+"cook_threshold",0.0132013201320132
+"auc_apparent",0.838919108615547
+"auc_cv_5fold",0.822951394981576
